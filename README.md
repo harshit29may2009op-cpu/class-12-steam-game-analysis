@@ -1,85 +1,122 @@
-# Steam Game Store Data Analysis
+<h1 align="center">🎮 Steam Game Store Data Analysis</h1>
 
-A beginner-friendly Class 12 Informatics Practices project. It reads game records from a CSV file, analyses them with Pandas, and displays or saves graphs through a numbered menu.
+<p align="center">
+  <strong>A beginner-friendly Class 12 Informatics Practices project</strong><br>
+  Explore sample game data with Python, Pandas, and Matplotlib.
+</p>
 
-## Important note about the data
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white" alt="Python 3">
+  <img src="https://img.shields.io/badge/Data-Pandas-150458?logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Charts-Matplotlib-11557C" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Format-CSV-2E7D32" alt="CSV data">
+</p>
 
-`data/steam_games.csv` is a small **illustrative sample** for learning how the project works. Its review counts, owner estimates, prices, and playtime values are not verified official Steam statistics. Replace it with a real dataset if your teacher requires authentic data.
+---
 
-## Menu options
+## ✨ What you can explore
 
-1. Project introduction.
-2. Dataset information.
-3. Show the first ten games.
-4. Show the top ten games by estimated owners.
-5. Show a genre report.
-6. Show the top ten games by positive review percentage.
-7. Search for a game by name.
-8. Open the graph menu to create one selected graph or all six.
-9. Find up to five top-rated games within a budget and optional genre.
-0. Exit.
+- Browse game records and search for a game by name.
+- Compare genres, prices, release years, reviews, and estimated playtime.
+- Open each graph separately from a simple numbered menu.
+- Find top-rated games that fit a budget and optional genre.
+- Save charts as PNG images, or view them in IDLE when a graphical window is available.
 
-From the graph menu, choose a number to create just that graph, or choose 7 to create all six. Each graph is saved as its own PNG file in `outputs/graphs/`:
+## 📊 Chart gallery
 
-1. Top 10 games by estimated owners.
-2. Number of games released each year.
-3. Number of games by genre.
-4. Average game price by genre.
-5. Game price compared with positive review percentage.
-6. Average playtime by genre.
+The graph menu offers six individual analyses. The budget finder creates a seventh comparison chart when you use it.
 
-Option 9 filters games by the maximum price you enter and, if selected, by genre. It ranks the matching games by positive review percentage and saves a comparison chart as `outputs/graphs/07_budget_game_finder.png`.
+| 🏆 Top games by estimated owners | 📅 Games released each year |
+|:--:|:--:|
+| ![Top games by estimated owners](outputs/graphs/01_top_games_by_owners.png) | ![Games released by year](outputs/graphs/02_releases_by_year.png) |
 
-## CSV columns
+| 🎭 Games by genre | 💵 Average price by genre |
+|:--:|:--:|
+| ![Games by genre](outputs/graphs/03_games_by_genre.png) | ![Average price by genre](outputs/graphs/04_average_price_by_genre.png) |
 
-| Column | Meaning |
-| --- | --- |
-| `game_name` | Name of the game |
-| `genre` | Main game genre |
-| `release_year` | Release year |
-| `price_usd` | Price in US dollars; `0` means free to play |
-| `positive_reviews` | Number of positive reviews in the sample |
-| `negative_reviews` | Number of negative reviews in the sample |
-| `average_playtime_hours` | Average playtime in hours |
-| `estimated_owners_millions` | Estimated owners, in millions |
+| ⭐ Price and positive reviews | ⏱️ Average playtime by genre |
+|:--:|:--:|
+| ![Price compared with positive reviews](outputs/graphs/05_price_vs_reviews.png) | ![Average playtime by genre](outputs/graphs/06_average_playtime_by_genre.png) |
 
-When using another CSV, keep these column names or update `required_columns` and the graph code in `analyse_steam.py`.
+### 🎯 Budget game finder
 
-## Run the project
+Choose a maximum price and optionally a genre. The program lists up to five top-rated matches and creates this comparison chart.
 
-Install Python 3, then open a terminal in this folder and run:
+![Budget game finder chart](outputs/graphs/07_budget_game_finder.png)
 
-Windows:
+## 🚀 Run the project
+
+1. Install [Python 3](https://www.python.org/downloads/).
+2. Download or clone this repository and open a terminal in the project folder.
+3. Install the libraries and start the menu:
+
+**Windows**
 
 ```bash
 python -m pip install -r requirements.txt
 python analyse_steam.py
 ```
 
-macOS or Linux:
+**macOS or Linux**
 
 ```bash
 python3 -m pip install -r requirements.txt
 python3 analyse_steam.py
 ```
 
-Each graph uses Pandas' `.plot()` method. In IDLE or another graphical Python session, the selected chart opens in a window; close the window to return to the menu. The program also saves every chart as a separate PNG file in `outputs/graphs/`. In a headless terminal, it saves the PNG without opening a window.
+### Run it in IDLE
 
-## Run from IDLE on Linux
+Open `analyse_steam.py` in IDLE and press **F5** (or choose **Run → Run Module**). Enter menu choices in the IDLE Shell. For the budget finder, enter a price and a genre, or type `all`.
 
-1. Open a terminal in the `steam_game_analysis` folder.
-2. Start the Python file in IDLE by running `idle analyse_steam.py` (on some systems, use `idle3 analyse_steam.py`).
-3. In the IDLE editor, choose **Run → Run Module** or press **F5**.
-4. Use the IDLE Shell to enter menu choices. For option 9, enter a budget and then a genre, or type `all`.
+## 🕹️ Main menu
 
-Install the libraries first in the same Python installation that IDLE uses:
+| Choice | What it does |
+|:--:|---|
+| 1 | Project introduction |
+| 2 | Dataset information |
+| 3 | Show the first ten games |
+| 4 | Show the top games by estimated owners |
+| 5 | Create a genre report |
+| 6 | Show the highest positive-review percentages |
+| 7 | Search for a game |
+| 8 | Choose one graph, or generate all six analysis graphs |
+| 9 | Find games within a budget and create a comparison chart |
+| 0 | Exit |
 
-```bash
-python3 -m pip install -r requirements.txt
+## 🧠 Class 12 IP concepts
+
+- Read CSV data into a Pandas DataFrame.
+- Select columns, handle missing values, group records, and calculate averages.
+- Create bar, horizontal bar, line, and scatter graphs with Pandas `.plot()` and Matplotlib.
+- Use a menu and functions to organise a small data-analysis program.
+
+## 📁 Project files
+
+```text
+steam_game_analysis/
+├── analyse_steam.py          # Numbered menu and analysis functions
+├── data/
+│   └── steam_games.csv       # Small example dataset
+├── outputs/graphs/           # Saved chart images
+├── requirements.txt          # Pandas and Matplotlib
+└── README.md
 ```
 
-## Class 12 IP topics used
+## 🧾 CSV columns
 
-- Pandas: reading CSV files, DataFrames, selecting columns, cleaning missing values, grouping data, and calculating averages.
-- Pandas `.plot()` and Matplotlib: line, bar, horizontal bar, and scatter plots with titles and axis labels; graphs are displayed when a graphical backend is available and also saved as PNG files.
-- Real-world problem solving: summarising game prices, genres, reviews, release years, and playtime.
+| Column | Meaning |
+|---|---|
+| `game_name` | Game title |
+| `genre` | Main genre |
+| `release_year` | Release year |
+| `price_usd` | Price in US dollars (`0` means free) |
+| `positive_reviews` | Positive reviews in the sample |
+| `negative_reviews` | Negative reviews in the sample |
+| `average_playtime_hours` | Average playtime in hours |
+| `estimated_owners_millions` | Estimated owners, in millions |
+
+> **About the data:** `data/steam_games.csv` is an illustrative sample for learning. Its review totals, owner estimates, prices, and playtimes are not verified official Steam statistics. Replace it with a reliable dataset if your assignment requires real-world figures.
+
+---
+
+<p align="center"><sub>Made for learning CSV analysis, Pandas, and Matplotlib in Class 12 IP.</sub></p>
