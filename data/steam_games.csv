@@ -1,0 +1,37 @@
+game_name,genre,release_year,price_usd,positive_reviews,negative_reviews,average_playtime_hours,estimated_owners_millions
+Stardew Valley,Simulation,2016,14.99,98000,3000,85,12.0
+Terraria,Adventure,2011,9.99,95000,5000,72,11.0
+Counter-Strike 2,Action,2023,0.00,87000,33000,64,30.0
+Portal 2,Puzzle,2011,9.99,99000,1000,12,8.0
+The Witcher 3: Wild Hunt,RPG,2015,39.99,96000,4000,55,15.0
+Left 4 Dead 2,Action,2009,9.99,97000,3000,28,10.0
+Euro Truck Simulator 2,Simulation,2012,19.99,95000,5000,96,9.0
+Hades,Action,2020,24.99,98000,2000,31,5.0
+Celeste,Platformer,2018,19.99,97000,3000,18,3.0
+Among Us,Party,2018,4.99,92000,8000,15,14.0
+Hollow Knight,Adventure,2017,14.99,97000,3000,34,7.0
+Civilization VI,Strategy,2016,59.99,86000,14000,68,8.0
+Grand Theft Auto V,Action,2015,29.99,88000,12000,75,25.0
+Slay the Spire,Strategy,2019,24.99,97000,3000,45,4.0
+Subnautica,Adventure,2018,29.99,96000,4000,37,6.0
+The Sims 4,Simulation,2014,0.00,84000,16000,52,20.0
+Undertale,RPG,2015,9.99,96000,4000,8,5.0
+Cuphead,Platformer,2017,19.99,95000,5000,14,4.0
+Deep Rock Galactic,Action,2020,29.99,97000,3000,62,5.0
+Cities: Skylines,Simulation,2015,29.99,93000,7000,61,7.0
+Dead Cells,Action,2018,24.99,95000,5000,29,5.0
+Disco Elysium,RPG,2019,39.99,92000,8000,24,2.0
+Factorio,Strategy,2020,35.00,99000,1000,110,3.0
+It Takes Two,Adventure,2021,39.99,95000,5000,16,3.0
+Vampire Survivors,Action,2022,4.99,98000,2000,22,7.0
+Balatro,Card,2024,14.99,98000,2000,26,3.0
+Peggle Deluxe,Puzzle,2007,4.99,96000,4000,7,2.0
+PowerWash Simulator,Simulation,2022,24.99,96000,4000,24,3.0
+Risk of Rain 2,Action,2020,24.99,95000,5000,39,5.0
+Fall Guys,Party,2020,0.00,79000,21000,11,18.0
+Age of Empires II: Definitive Edition,Strategy,2019,19.99,95000,5000,42,4.0
+Ori and the Will of the Wisps,Platformer,2020,29.99,96000,4000,16,2.0
+Sea of Thieves,Adventure,2020,39.99,88000,12000,49,8.0
+Inscryption,Card,2021,19.99,97000,3000,14,2.0
+The Binding of Isaac: Rebirth,Roguelike,2014,14.99,97000,3000,60,4.0
+Dead by Daylight,Action,2016,19.99,81000,19000,48,10.0
